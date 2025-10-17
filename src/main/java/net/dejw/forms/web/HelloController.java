@@ -1,6 +1,9 @@
 package net.dejw.forms.web;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import net.dejw.forms.domain.ContactForm;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Map;
 
 @RestController
 public class HelloController {

@@ -4,7 +4,7 @@ import net.dejw.forms.domain.ContactForm;
 
 import java.util.List;
 
-public interface ContactFormRepositoryCustom {
+public interface ContactFormRepositoryCustomImplements {
 
     List<ContactForm> findLongNameForms();
 }
