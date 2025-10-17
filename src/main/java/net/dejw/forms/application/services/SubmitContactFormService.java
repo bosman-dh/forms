@@ -6,13 +6,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class SubmitContactFormService {
-    private final ContactFormRepository saver;
+    private final ContactFormRepository contactFormRepository;
 
     public SubmitContactFormService(ContactFormRepository saver) {
-        this.saver = saver;
+        this.contactFormRepository = saver;
     }
 
     public void submit(ContactForm form) {
-        saver.save(form);
+        contactFormRepository.save(form);
     }
 }
